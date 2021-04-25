@@ -19,14 +19,16 @@ Write a program that retrieves the following information given the provided file
 - Output will be displayed in the command prompt.
 
 ##Source Code 
-You can find the source code under the coffeeAssessment directory.
+- You can find the source code under the coffeeAssessment directory.
 
 ##Brief Description Of My Solution
-I have iterated through the orders and grouped them by user.
- I have calculated the cost for each order by getting the cost of the drink from products.
- I have calculated the total cost of all orders for each user.
- I have compared the total amount with the amount already payed by user with the data from payments.
- I have calculated the difference between the total amount to be paid and amount already paid to get the amount owed by user.
- I found that many users in payments.json have already paid more amount than the total cost of their orders.
- That is why i am printing another column "Excess Amount Paid" as many users don't owe any money but have paid more.
- I am not sure if the data given is incorrect or if this is expected.
+- Iterate through the orders and group them by user.
+- Calculate the cost for each order by getting the cost of the drink from products.
+- Calculate the total cost of all orders for each user.
+- Compare the total amount with the amount already payed by the user with the data from payments.
+- Calculate the difference between the total amount to be paid and amount already paid to get the amount owed by user.
+
+##My Observation
+- I found that many users in payments.json have already paid more amount than the total cost of their orders.
+- I am printing another column "Excess Amount Paid" as many users don't owe any money but have paid more.
+- I am not sure if this is a data problem or expected behaviour.
