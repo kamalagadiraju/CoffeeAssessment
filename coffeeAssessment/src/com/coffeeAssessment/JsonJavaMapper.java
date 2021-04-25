@@ -1,8 +1,8 @@
 package com.coffeeAssessment;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.Reader;
 
 import com.google.gson.Gson;
@@ -23,13 +23,13 @@ public class JsonJavaMapper {
 		Reader reader3 = null;
 
 		try {
-			reader1 = new FileReader("resources/orders.json");
+			reader1 = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/orders.json")));
 			orders = gson.fromJson(reader1, Order[].class);
-			reader2 = new FileReader("resources/payments.json");
+			reader2 = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/payments.json")));
 			payments = gson.fromJson(reader2, Payment[].class);
-			reader3 = new FileReader("resources/products.json");
+			reader3 = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/products.json")));
 			products = gson.fromJson(reader3, Product[].class);
-		} catch (FileNotFoundException e) {
+		} catch (Exception e) {
 			System.out.println("Exception while reading the file : " + e.getMessage());
 		} finally {
 			if (reader1 != null) {
