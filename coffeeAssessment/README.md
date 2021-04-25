@@ -14,8 +14,12 @@ Write a program that retrieves the following information given the provided file
 - Publish the source code into GitHub (using your own personal account) and share it with us.
 
 ##How to run this application
-- Right click on the Application.java and Run As Java application.
-- The output will be displayed in the console
+- Download the executable jar coffeeAssessment.jar in the github repository. 
+- Open command prompt and go to the folder where the downloaded executable jar exists and run the command : java -jar coffeeAssessment.jar
+- Output will be displayed in the command prompt.
+
+##Source Code 
+You can find the source code under the coffeeAssessment directory.
 
 ##Brief Description Of My Solution
 I have iterated through the orders and grouped them by user.
